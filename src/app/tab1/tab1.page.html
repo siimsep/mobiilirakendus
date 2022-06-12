@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Küsimusi esitaks siin
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item id="maakond">
+    <ion-label>Vali maakond</ion-label>
+    <ion-select value="Läänemaa" okText="Edasi" cancelText="Loobu">
+      <ion-select-option value="1">Harju maakond</ion-select-option>
+      <ion-select-option value="2">Hiiu maakond</ion-select-option>
+      <ion-select-option value="3">Ida-Viru maakond</ion-select-option>
+      <ion-select-option value="4">Jõgeva maakond</ion-select-option>
+      <ion-select-option value="5">Järva maakond</ion-select-option>
+      <ion-select-option value="6">Lääne maakond</ion-select-option>
+      <ion-select-option value="7">Lääne-Viru maakond</ion-select-option>
+      <ion-select-option value="8">Põlva maakond</ion-select-option>
+      <ion-select-option value="9">Pärnu maakond</ion-select-option>
+      <ion-select-option value="10">Rapla maakond</ion-select-option>
+      <ion-select-option value="11">Saare maakond</ion-select-option>
+      <ion-select-option value="12">Tartu maakond</ion-select-option>
+      <ion-select-option value="13">Valga maakond</ion-select-option>
+      <ion-select-option value="14">Viljandi maakond</ion-select-option>
+      <ion-select-option value="15">Võru maakond</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Sinu küsimus:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Vastused</ion-label>
+    <ion-input placeholder="Õige vastus"></ion-input>
+    <ion-input placeholder="Vale vastus #1"></ion-input>
+    <ion-input placeholder="Vale vastus #2"></ion-input>
+    <ion-input placeholder="Vale vastus #3"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Küsimuse esitaja:</ion-label> 
+  <ion-input></ion-input>
+</ion-item>
+  <ion-button (click)="submit()" id="submitbtn" shape="round" size="large" expand="block">Saada küsimus!</ion-button>
+</ion-content>

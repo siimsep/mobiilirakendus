@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Mängida võiks niimoodi
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content id="kaart">
+      <img src="assets/images/eesti-hall.png" class="kaart">
+      <img src="assets/images/jogeva.png" class="kaart">
+      <img src="assets/images/jogevatekst.png" id="nimikaardil">
+      </ion-card-content>
+    <ion-card-content id="kysimus">
+    Mis tiitlit kannab Jõgeva linn?
+    </ion-card-content>
+  </ion-card>
+  <ion-button (click)="wrong()" id="wrong1"   class="vastusenupp" shape="round" size="large" expand="block">Matkapealinn</ion-button>
+  <ion-button (click)="correct()"id="correct1" class="vastusenupp" shape="round" size="large" expand="block">Külmapealinn</ion-button>
+  <ion-button (click)="wrong()"id="wrong2"   class="vastusenupp" shape="round" size="large" expand="block">Veinipealinn</ion-button>
+  <ion-button (click)="wrong()"id="wrong3"   class="vastusenupp" shape="round" size="large" expand="block">Laulupealinn</ion-button>
+</ion-content>

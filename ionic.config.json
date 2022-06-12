@@ -1,0 +1,7 @@
+{
+  "name": "Aed",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
